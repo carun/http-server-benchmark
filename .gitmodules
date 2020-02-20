@@ -1,0 +1,3 @@
+[submodule "rust-actix"]
+	path = rust-actix
+	url = https://github.com/actix/examples
