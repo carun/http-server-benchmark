@@ -1,6 +1,7 @@
 {
-	"dependencies": {
-		"vibe-d": "~>0.8.3"
-	},
-	"name": "vibe-http-perf-test"
+    "dependencies": {
+        "vibe-d": "~>0.8.3"
+    },
+    "versions": ["VibeManualMemoryManagement"],
+    "name": "vibe-http-perf-test"
 }
