@@ -285,3 +285,27 @@ VmSize, VmRSS
 629432, 70848
 629432, 70848
 ```
+
+## C++ - Poco
+
+### Setup
+
+```
+cd cpp-poco
+mkdir build && cd build
+cmake .. -GNinja
+ninja
+src/poco-http-perf
+```
+
+```
+Running 10s test @ http://localhost:8080
+  8 threads and 1000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.68ms   67.96ms 537.80ms   86.31%
+    Req/Sec   316.93    764.36     4.94k    87.05%
+  16050 requests in 10.25s, 1.15MB read
+  Socket errors: connect 0, read 49633, write 0, timeout 0
+Requests/sec:   1566.16
+Transfer/sec:    114.95KB
+```
